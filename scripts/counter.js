@@ -1,6 +1,6 @@
 //variables
-let counterbutton = document.getElementById("add1-button");
-let counter = document.getElementById("add1");
+let counterbutton = document.getElementById("counter-button");
+let counter = document.getElementById("counter");
 let number = 0;
 let minusbutton = document.getElementById("minus-button");
 let clearbutton = document.getElementById("clear-button");
@@ -14,6 +14,8 @@ let number7button = document.getElementById("seven-button");
 let number8button = document.getElementById("eight-button");
 let number9button = document.getElementById("nine-button");
 let number0button = document.getElementById("zero-button");
+
+
 
 
 
@@ -32,43 +34,43 @@ function clear() {
     number = 0;
     counter.textContent = number;
 }
-function number1() {
+function one() {
     number = 1;
     counter.textContent = number;
 }
-function number2() {
+function two() {
     number = 2;
     counter.textContent = number;
 }
-function number3() {
+function three() {
     number = 3;
     counter.textContent = number;
 }
-function number4() {
+function four() {
     number = 4;
     counter.textContent = number;
 }
-function number5() {
+function five() {
     number = 5;
     counter.textContent = number;
 }
-function number6() {
+function six() {
     number = 6;
     counter.textContent = number;
 }
-function number7() {
+function seven() {
     number = 7;
     counter.textContent = number;
 }
-function number8() {
+function eight() {
     number = 8;
     counter.textContent = number;
 }
-function number9() {
+function nine() {
     number = 9;
     counter.textContent = number;
 }
-function number0() {
+function zero() {
     number = 0;
     counter.textContent = number;
 }
@@ -77,14 +79,14 @@ function number0() {
 minusbutton.addEventListener("click", minus);
 counterbutton.addEventListener("click", add1);
 clearbutton.addEventListener("click", clear);
-number1button.addEventListener("click", number1);
-number2button.addEventListener("click", number2);
-number3button.addEventListener("click", number3);
-number4button.addEventListener("click", number4);
-number5button.addEventListener("click", number5);
-number6button.addEventListener("click", number6);
-number7button.addEventListener("click", number7);
-number8button.addEventListener("click", number8);
-number9button.addEventListener("click", number9);
-number0button.addEventListener("click", number0);
+number1button.addEventListener("click", one);
+number2button.addEventListener("click", two);
+number3button.addEventListener("click", three);
+number4button.addEventListener("click", four);
+number5button.addEventListener("click", five);
+number6button.addEventListener("click", six);
+number7button.addEventListener("click", seven);
+number8button.addEventListener("click", eight);
+number9button.addEventListener("click", nine);
+number0button.addEventListener("click", zero);
 
