@@ -1,6 +1,7 @@
 //variables
 let counterbutton = document.getElementById("counter-button");
 let counter = document.getElementById("counter");
+
 let number = 0;
 let minusbutton = document.getElementById("minus-button");
 let clearbutton = document.getElementById("clear-button");
@@ -14,65 +15,118 @@ let number7button = document.getElementById("seven-button");
 let number8button = document.getElementById("eight-button");
 let number9button = document.getElementById("nine-button");
 let number0button = document.getElementById("zero-button");
-
-
-
-
+let addbutton = document.getElementById("plus-button");
+let subtractbutton = document.getElementById("subtract-button");
+let equalbutton = document.getElementById("equal-button");
+let multiplybutton = document.getElementById("mutiply-button");
+let dividebutton = document.getElementById("divide-button");
+let memory = 0;
+let symbolmemory = "0";
 
 // functions
+function show(value) {
+    counter.textContent = value;
+}
 function add1() {
     number = number + 1;
-    counter.textContent = number;
+    show(number);
 }
 
 
 function minus() {
     number = number - 1;
-    counter.textContent = number;
+    show(number);
 }
 function clear() {
     number = 0;
-    counter.textContent = number;
+    show(number);
+    memory = 0;
+}
+function add() {
+    memory = number;
+    symbolmemory = "add";
+    number = 0;
+
+}
+function subtract() {
+    memory = number;
+    symbolmemory = "subtract";
+    number = 0;
+}
+function multiply() {
+    memory = number;
+    symbolmemory = "multiply";
+    number = 0;
+}
+function divide() {
+    memory = number;
+    symbolmemory = "divide";
+    number = 0;
+}
+
+
+function equal() {
+    if(symbolmemory==="add"){
+        memory = number + memory;
+    }
+    if(symbolmemory==="subtract"){
+        memory = memory - number;
+    }
+    
+    show(memory);
+     if(symbolmemory==="multiply"){
+        memory = numberxmemory;
+    }
+    show(memory);
+     if(symbolmemory==="divide"){
+        memory =memory/number;
+    }
+    
+    
+    
+    show(memory);
+   
+
 }
 function one() {
-    number = 1;
-    counter.textContent = number;
+    number = number * 10 + 1;
+    show(number);
 }
 function two() {
-    number = 2;
-    counter.textContent = number;
+    number = number * 10 + 2;
+    show(number);
 }
 function three() {
-    number = 3;
-    counter.textContent = number;
+    number = number * 10 + 3;
+    show(number);
 }
 function four() {
-    number = 4;
-    counter.textContent = number;
+    number = number * 10 + 4;
+    show(number);
 }
 function five() {
-    number = 5;
-    counter.textContent = number;
+    number = number * 10 + 5
+    show(number);
 }
 function six() {
-    number = 6;
-    counter.textContent = number;
+    number = number * 10 + 6;
+    show(number);
 }
 function seven() {
-    number = 7;
-    counter.textContent = number;
+    number = number * 10 + 7;
+    show(number);
 }
 function eight() {
-    number = 8;
-    counter.textContent = number;
+    number = number * 10 + 8;
+    show(number);
 }
 function nine() {
-    number = 9;
-    counter.textContent = number;
+    number = number * 10 + 9;
+    show(number);
 }
 function zero() {
-    number = 0;
-    counter.textContent = number;
+    number = number * 10 + 0;
+    show(number);
 }
 
 // Event listener
@@ -89,4 +143,8 @@ number7button.addEventListener("click", seven);
 number8button.addEventListener("click", eight);
 number9button.addEventListener("click", nine);
 number0button.addEventListener("click", zero);
-
+addbutton.addEventListener("click", add);
+subtractbutton.addEventListener("click", subtract);
+equalbutton.addEventListener("click", equal);
+multiplybutton.addEventListener("click", multiply);
+dividebutton.addEventListener("click", divide);

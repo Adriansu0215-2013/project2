@@ -4,13 +4,13 @@
 body {
   padding: 20px;
   background-color: #000000;
-  color: #00ff26;
+  color: #00ff51;
 }
 .light-mode {
   background-color: #aaaaaa;
   color: rgb(255, 0, 299);
   button {
-  color:white;
+  color:rgb(0, 0, 0);
   border: 5px solid rgb(255, 0, 299);
   padding: 10px;
   width: 100px;
@@ -37,7 +37,7 @@ footer {
   background-color: #aaaaaa;
 }
 button {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: 5px solid rgb(21, 255, 0);
   padding: 10px;
   width: 100px;
@@ -45,8 +45,16 @@ button {
   box-shadow: 5px 5px 5px 0 rgb(160, 160, 160);
   border-radius: 25px;
 }
-#cauculater {
+#cauculator {
+  border-radius: 10px;
  background-image:url(../images/binary-moving-horizontal-bg-coding-programming-hacker-screen-scifi-movie-flowing-data-network-matrix-hitech-artificial-283832322.webp);
+width: 330px;
+padding: 5px;
+color:rgb(255, 255, 255);
 
 }
+#counter{
+  font-size:20px
+}
+ 
 
